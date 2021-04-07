@@ -1,5 +1,6 @@
 print("Welcome to the UW Calculator Playground")
 
+// custom function that casts strings to ints
 func strToInt(str: String) -> Int {
     let ret = Int(str) ?? 0
     return ret
@@ -65,9 +66,6 @@ func calculate(_ arg: String) -> Int {
     }
     return calculate(res)
 }
-
-print(calculate(["1", "2", "3", "4", "5", "avg"]))
-
 // -------------------------------------------
 // All of these expressions should return true
 // if you have implemented calculate() correctly
